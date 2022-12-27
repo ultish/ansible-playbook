@@ -7,4 +7,4 @@
 - name: Copy App Configuration
   ansible.builtin.template:
     src: configuration.yml
-    dest: /Users/ultish/ansible-playground/
+    dest: ~/ansible-playground/
