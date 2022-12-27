@@ -4,5 +4,12 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "yaml.schemas": {
+      "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json": [
+        "file:///Users/ultish/projects/ansible-playground/inventories/staging/hosts.yml",
+        "file:///Users/ultish/projects/ansible-playground/inventories/production/hosts.yml"
+      ]
+    }
+  }
 }
