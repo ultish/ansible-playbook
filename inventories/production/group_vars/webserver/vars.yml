@@ -2,4 +2,5 @@ webserver:
   hostname: production
 
 debug:
-  run:
+  run: false
+  # run:

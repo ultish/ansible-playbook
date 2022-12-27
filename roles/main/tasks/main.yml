@@ -2,9 +2,10 @@
   ansible.builtin.debug:
     var: hostvars[inventory_hostname]
   tags: debug_info
-  when: (debug.run is defined) and (debug.run|bool == true)
+  when: (debug.run is defined) and (debug.run)
 
 - name: Copy App Configuration
   ansible.builtin.template:
     src: configuration.yml
     dest: ~/ansible-playground/
+    mode: 0600
