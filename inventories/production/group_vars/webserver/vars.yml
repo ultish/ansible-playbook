@@ -1,2 +1,5 @@
 webserver:
   hostname: production
+
+debug:
+  run:

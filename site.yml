@@ -1,4 +1,6 @@
 - name: The Everything Playbook
   hosts: all
-  roles:
-    - main
+  tasks:
+    - name: Run the Main role
+      ansible.builtin.import_role:
+        name: main

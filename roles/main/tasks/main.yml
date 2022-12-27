@@ -1,9 +1,10 @@
 - name: Display all variables/facts known for a host
-  debug:
+  ansible.builtin.debug:
     var: hostvars[inventory_hostname]
   tags: debug_info
+  when: (debug.run is defined) and (debug.run|bool == true)
 
 - name: Copy App Configuration
-  template:
+  ansible.builtin.template:
     src: configuration.yml
     dest: /Users/ultish/ansible-playground/

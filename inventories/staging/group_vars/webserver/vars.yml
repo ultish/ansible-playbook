@@ -1,2 +1,5 @@
 webserver:
   hostname: staging
+
+debug:
+  run: true
