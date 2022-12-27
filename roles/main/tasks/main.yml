@@ -1,0 +1,9 @@
+- name: Display all variables/facts known for a host
+  debug:
+    var: hostvars[inventory_hostname]
+  tags: debug_info
+
+- name: Copy App Configuration
+  template:
+    src: configuration.yml
+    dest: /Users/ultish/ansible-playground/

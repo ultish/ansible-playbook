@@ -1,0 +1,4 @@
+- name: The Everything Playbook
+  hosts: all
+  roles:
+    - main
